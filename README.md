@@ -17,6 +17,10 @@ raco exe csv-to-sql-queries.rkt
 
 I included a one-liner version of the same program, which uses static values, composition, threading and bypasses any input validation. The program is just one (long) line long, and was written to illustrate the power of threading in Racket.
 
+## Download
+
+Download the latest release for Windows x64 [HERE](https://github.com/DexterLagan/csv-to-sql/releases).
+
 ## License
 
 CSV to SQL is free software; see [LICENSE](https://github.com/DexterLagan/csv-to-sql/blob/main/LICENSE) for more details.
