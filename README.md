@@ -27,6 +27,14 @@ I included a [one-liner version](https://github.com/DexterLagan/csv-to-sql/blob/
         (let ((content _) (file (put-file))) (display-lines-to-file content file #:exists 'replace)))                  ; save result in new file
  (get-file))                                                                                                           ; display file open dialog
 </pre>
+
+## What's next?
+
+A few things would make this tool even more useful. For example:
+- ability to configure the SQL query template;
+- one-window GUI instead of a bunch of dialog prompts;
+- generalizing line-splitting through an unlimited number of fields.
+
 ## License
 
 CSV to SQL is free software; see [LICENSE](https://github.com/DexterLagan/csv-to-sql/blob/main/LICENSE) for more details.
