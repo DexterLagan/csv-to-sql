@@ -12,4 +12,8 @@ Racket 7.x or 8.x:
 raco exe csv-to-sql-queries.rkt
 </pre>
 
+## One-liner version
+
+I included a one-liner version of the same program, which uses static values, composition, threading and bypasses any input validation. The program is just one (long) line long, and was written to illustrate the power of threading in Racket.
+
 ## License
