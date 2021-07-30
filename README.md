@@ -19,8 +19,14 @@ raco exe csv-to-sql-queries.rkt
 
 ## One-liner version
 
-I included a [one-liner version](https://github.com/DexterLagan/csv-to-sql/blob/main/csv-to-sql-one-liner.rkt) of the same program, which uses static values, composition, threading and bypasses any input validation. The program is just one (long) line long, and was written to illustrate the power of threading in Racket.
-
+I included a [one-liner version](https://github.com/DexterLagan/csv-to-sql/blob/main/csv-to-sql-one-liner.rkt) of the same program, which uses static values, composition, threading and bypasses any input validation. The program is just one (long) line long, and was written to illustrate the weight of input validation in mission-critical, production software, as well as power of composition and threading:
+<pre>
+((comp_ (file->lines _)                                                                                                ; read file as lines
+        (map (λ (line) (string-split line "|")) _)                                                                     ; split each line on |
+        (map (λ (lst) (string-append "UPDATE parc SET status = '" (last lst) "' WHERE parc_id = " (first lst) ";")) _) ; build SQL query for each line
+        (let ((content _) (file (put-file))) (display-lines-to-file content file #:exists 'replace)))                  ; save result in new file
+ (get-file))                                                                                                           ; display file open dialog
+</pre>
 ## License
 
 CSV to SQL is free software; see [LICENSE](https://github.com/DexterLagan/csv-to-sql/blob/main/LICENSE) for more details.
