@@ -4,15 +4,15 @@ A small utility to convert any CSV file into a list of SQL queries. Practical to
 
 ## Version History
 
-v1.0<br>
-- Works for a primary ID and one value column.<br>
-- Program asks user to name the delimiter, the target SQL table, the primary ID column, the SQL column to update, and the two column indexes for Primary ID and Value.<br>
-- Program builds one SQL query per CSV line, and returns<br>
-<br>
 v1.1<br>
 - In this version, the program asks for as many columns as there are values (plus the primary ID column).<br>
 - If one enters 0, 2, 3, 4, the program will assume 0 is the primary ID column, and 2, 3 and 4 the value columns.<br>
 - The SQL query is built with as many value sub-querie as necessary to accomodate.<br>
+<br>
+v1.0<br>
+- Works for a primary ID and one value column.<br>
+- Program asks user to name the delimiter, the target SQL table, the primary ID column, the SQL column to update, and the two column indexes for Primary ID and Value.<br>
+- Program builds one SQL query per CSV line, and returns<br>
 <br>
 Conversion notes:<br>
 - Double-quoted values are stripped off their double quotes<br>
