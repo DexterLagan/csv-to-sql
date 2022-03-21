@@ -15,9 +15,9 @@ v1.1<br>
 - The SQL query is built with as many value sub-querie as necessary to accomodate.<br>
 <br>
 Conversion notes:<br>
-- double-quoted values are stripped off their double quotes<br>
-- doubled double-quotes in values are deduped;<br>
-- single quotes in values are doubled (for SQL compatibility)<br>
+- Double-quoted values are stripped off their double quotes<br>
+- Doubled double-quotes in values are deduped;<br>
+- Single quotes in values are doubled (for SQL compatibility).<br>
 
 ## Download
 
