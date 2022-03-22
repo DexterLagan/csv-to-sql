@@ -13,20 +13,20 @@ UPDATE propriete_valeur SET caracteristique_odoo_1 = 'Accessory (Type)', valeur_
 
 ## Version History
 
-v1.1<br>
-- In this version, the program asks for as many columns as there are values (plus the primary ID column).<br>
-- If one enters 0, 2, 3, 4, the program will assume 0 is the primary ID column, and 2, 3 and 4 the value columns.<br>
-- The SQL query is built with as many value sub-querie as necessary to accomodate.<br>
-<br>
-v1.0<br>
-- Works for a primary ID and one value column.<br>
-- Program asks user to name the delimiter, the target SQL table, the primary ID column, the SQL column to update, and the two column indexes for Primary ID and Value.<br>
-- Program builds one SQL query per CSV line, and returns<br>
-<br>
-Conversion notes:<br>
-- Double-quoted values are stripped off their double quotes<br>
-- Doubled double-quotes in values are deduped;<br>
-- Single quotes in values are doubled (for SQL compatibility).<br>
+v1.1
+- In this version, the program asks for as many columns as there are values (plus the primary ID column);
+- If one enters 0, 2, 3, 4, the program will assume 0 is the primary ID column, and 2, 3 and 4 the value columns;
+- The SQL query is built with as many value sub-querie as necessary to accomodate.
+
+v1.0
+- Works for a primary ID and one value column;
+- Program asks user to name the delimiter, the target SQL table, the primary ID column, the SQL column to update, and the two column indexes for Primary ID and Value;
+- Program builds one SQL query per CSV line, and returns;
+
+Conversion notes:
+- Double-quoted values are stripped off their double quotes;
+- Doubled double-quotes in values are deduped;
+- Single quotes in values are doubled (for SQL compatibility).
 
 ## Download
 
