@@ -15,7 +15,7 @@ UPDATE propriete_valeur SET caracteristique_odoo_1 = 'Accessory (Type)', valeur_
 
 v1.1
 - In this version, the program asks for as many columns as there are values (plus the primary ID column);
-- If one enters 0, 2, 3, 4, the program will assume 0 is the primary ID column, and 2, 3 and 4 the value columns;
+- If one inputs 0, 2, 3, 4, the program will assume 0 is the primary ID column, and 2, 3 and 4 the value columns;
 - The SQL query is built with as many value sub-querie as necessary to accomodate.
 
 v1.0
