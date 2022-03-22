@@ -60,7 +60,8 @@ A few things would make this tool even more useful. For example:
 - ability to configure the SQL query template;
 - one-window GUI instead of a bunch of dialog prompts;
 - generalizing line-splitting through an unlimited number of fields;
-- integration with SQLite through its CSV import capabilities.
+- integration with SQLite through its CSV import capabilities;
+- more unit tests, i.e. CSV lines.
 
 ## License
 
