@@ -2,6 +2,15 @@
 
 A small utility to convert any CSV file into a list of SQL queries. Practical to convert, say, a log, into a database fix.
 
+Converts this:
+<pre>
+489, Accessory (Type), Speaker, Processor (Brand), Intel, Processor (Model), i5
+</pre>
+into this:
+<pre>
+UPDATE propriete_valeur SET caracteristique_odoo_1 = 'Accessory (Type)', valeur_odoo_1 = 'Speaker', caracteristique_odoo_2 = 'Processor (Brand)', valeur_odoo_2 = 'Intel', caracteristique_odoo_3 = 'Processor (Model)', valeur_odoo_3 = 'i5' WHERE propriete_valeur_num = 489;
+</pre>
+
 ## Version History
 
 v1.1<br>
